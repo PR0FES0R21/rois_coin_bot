@@ -1,0 +1,200 @@
+body {
+    background: linear-gradient(to bottom, #0A0A0A 10%, #FFD700, #A9A9A9);
+    color: #FFFFFF;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: rgba(255, 215, 0, 0.3);
+}
+
+.user-information {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.user_profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.image_profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 234, 0);
+}
+
+.image_profile img {
+    width: 100%;
+    height: auto;
+}
+
+.username_profile {
+    font-size: 20px;
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+
+.minning-information {
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.minne-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1px;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.minne-icon-container {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.minne-value {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.minne-icon {
+    color: #FFD700;
+}
+
+.username_profile {
+    font-weight: bold;
+}
+
+#coin-result {
+    position: fixed;
+    top: 250px;
+}
+
+.coin-information {
+    color: #fff4b5d2;
+}
+
+.coin-value-result {
+    font-size: 40px;
+    font-weight: bold;
+    color: #f2f6fc;
+}
+
+#home {
+    position: fixed;
+    bottom: 100px;
+}
+
+#coin {
+    position: fixed;
+    top: 330px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+}
+
+
+#coin img {
+    width: 200px;
+}
+
+#coin {
+    position: fixed;
+    bottom: 20px;
+    /* Sesuaikan dengan posisi vertikal yang diinginkan */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    /* Pastikan elemen coin tetap di atas konten lain */
+}
+
+.coin-container {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    /* Mengatur overflow agar teks tidak muncul di luar container */
+}
+
+#coin-img {
+    width: 100px;
+    /* Sesuaikan ukuran gambar */
+}
+
+#coin-text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    transform: translateY(100%);
+}
+
+.show-text {
+    /* transform: translateY(0%); */
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
